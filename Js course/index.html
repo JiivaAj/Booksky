@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Course</title>
+  </head>
+  <body>
+    <script>
+      /*let person = {
+        name: "Jeeva",
+        age: 21,
+      };
+      console.log(person["name"]);
+      function greetUser(name) {
+        let msg = "Hi,My name is " + name + " Learning JS";
+        console.log(msg);
+      }
+
+      greetUser("Ajay");
+      greetUser("Jeeva");*/
+
+      //Objects in js
+      /* const person = {
+        name: "Ajay",
+        age: 21,
+        sex: "male",
+      };
+
+      //Loop - In
+
+      for (let key in person) {
+        console.log("Key:", key);
+      }
+
+      //Array
+
+      let colors = ["blue", "red", "yellow"];
+      for (let key in colors) {
+        console.log("key" + " " + colors[key]);
+      }
+
+      //Loop - Of
+
+      for (let color of colors) {
+        console.log("color is" + " " + colors);
+      }
+
+      //Dynamic objects
+
+      const people = {
+        name: "Jeeva",
+      };
+
+      people.age = 24;
+      people.greeting = function (name1) {
+        console.log(name1);
+      };
+      console.log(people.age);
+      people.greeting("jiiva");
+
+      //Functions inside Objects
+      let person2 = {
+        name: "raghavan",
+        age: 21,
+        greeting: function () {
+          let msg = `My name is ${this.name}`;
+          console.log(msg);
+        },
+      };
+      person2.greeting();
+
+      //Cloning a Object
+      const user = {
+        name: "Jeeva",
+        getFullName() {
+          console.log(`my name is ${this.name}`);
+        },
+      };
+
+      let another = Object.assign({ age: 21 }, user);
+      console.log(another.name);
+      console.log(another.age);
+
+      //Spread Operator
+      let another1 = { ...user };
+      console.log(another1.name);
+
+      //ForEach loop
+      const dailyRoutine = ["Wake up", "Eat", "Sleep"];
+      dailyRoutine.forEach(function (routine) {
+        console.log(routine);
+      });
+      dailyRoutine.forEach((routine) => {
+        console.log(routine);
+      });
+
+      const donations = [45, 15, 20];
+      let res = donations.reduce(function (total, currentVal) {
+        return total + currentVal;
+      });
+      console.log("result: " + res);
+
+      const shoppingCart = [
+        { id: 1, item: "milk", cost: 45 },
+        { id: 2, item: "biscuit", cost: 35 },
+        { id: 3, item: "sweet", cost: 5 },
+      ];
+      /* let res1 = shoppingCart.reduce(function (total, currentVal) {
+        return total + currentVal.cost;
+      }, 0);
+      console.log("result:" + res1);*/
+
+      /* function addSum(total, currentVal) {
+        return total + currentVal.cost;
+      }
+      let res1 = shoppingCart.reduce(addSum, 0);
+      console.log("result:" + res1);*/
+
+      const number = [1, 10, 5, 30];
+      let res = number.sort((a, b) => {
+        return b - a;
+      });
+      console.log(res);
+    </script>
+  </body>
+</html>
